@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#nav-mobile{
+    font-weight: bold;
+}
+
+
+.menu{
+    text-transform: uppercase;
+
+}
+
+h3{
+    text-transform: uppercase;
+    
+}
+
+.row{
+    margin-bottom: 0px!important;
+}
+
+#small-brand, #small-brand-icon{
+    font-size: 20px
+}
+
+footer{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+

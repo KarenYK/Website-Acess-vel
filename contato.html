@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./CSS/contato.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="pink lighten-4">
+      <div class="nav-wrapper container row">
+        <a href="#" class="brand-logo brown-text center hide-on-med-and-down">Sonhos Gelados 
+        <i class="material-icons right">ac_unit</i>
+        </a>
+
+        <a href="#" class="brand-logo brown-text center hide-on-large-only" id="small-brand">Sonhos Gelados 
+          <i class="material-icons right" id="small-brand-icon">ac_unit</i>
+        </a>
+
+
+        <ul id="slide-out" class="sidenav container">
+          <li>
+            <div class="user-view show-on-large">
+              <div class="background responsive-img">
+                <img src="./Fotos/rosinha.jpg">
+              </div>
+              <a href=""><img class="circle" src="./Fotos/Logo.jpg"></a>
+              <p class="black-text">Sonhos Gelados</p>
+            </div>
+          </li>
+          <li><a class="waves-effect" href="./index.html">Home</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="waves-effect" href="./produtos.html">Produtos</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="waves-effect" href="./contato.html">Contato</a></li>
+          <li>
+            <div class="divider"></div>
+          </li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large brown-text"><i
+            class="material-icons">menu</i></a>
+          </div> 
+      </nav>
+
+   
+
+  </header>
+
+  <main>
+
+    <!-- <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="./Fotos/Página Principal menor.jpg"> 
+                <div class="caption center-align">
+                  <h3>Grandes Novidades</h3>
+                  <h5 class="light grey-text text-lighten-3">Confira em nossos produtos</h5>
+                </div>
+              </li>
+              <li>
+                <img src="./Fotos/Potes de sorvete.jpg"> 
+                <div class="caption left-align">
+                  <h3>Sabores que te levam ao céu!</h3>
+                  <h5 class="light grey-text text-lighten-3">Confira em nossos produtos</h5>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+
+
+    <section class="red lighten-4">
+      <br>
+      <div class="carousel carousel-slider row responsive-img container">
+        <a class="carousel-item col s12" href="#"><img src="./Fotos/pagina-principal.jpg"></a>
+        <a class="carousel-item col s12" href="#"><img src="./Fotos/potes-de-sorvete.jpg"></a>
+      </div>
+    </section>
+
+    <section class="black-text red lighten-4">
+      <div>
+        <span class="brown-text">Contato</span>
+        <div class="row container">
+          <form class="col offset-l2 l9 s12">
+            <div class="row ">
+              <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="nome" type="text" class="validate">
+                <label for="nome">Nome*</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field">
+                <i class="material-icons prefix">contact_mail</i>
+                <input id="email" type="email" class="validate">
+                <label for="email">Email*</label>
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="input-field">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telefone</label>
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="input-field">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Mensagem*</label>
+              </div>
+            </div>
+            <div class="row center">
+              <a class="waves-effect waves-blue btn-flat  ">Enviar</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="center">
+    Copyright (c) 2023 Site de Karen Komatsu
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    $(document).ready(function () {
+      $('.slider').slider();
+    });
+  </script>
+
+</body>
+
+</html>
